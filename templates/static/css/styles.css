@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: black;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+/*Header*/
+.header {
+  height: 80px;
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(5px) saturate(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.header-left {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.icon-menu {
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 8px;
+  background: none;
+}
+
+.link-nav {
+  color: black;
+  transition: all .2s;
+}
+
+.link-nav:hover {
+  background-color: black;
+  color: white;
+}
+
+.header-right {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.item-link {
+  text-decoration: none;
+  padding: 8px;
+}
+
+.item-link i {
+  font-size: 1.25rem;
+  margin-right: 8px;
+}
+
+
+/*Main-home*/
+.container {
+  margin: 90px 45px 0;
+}
+
+.form-header {
+  margin-bottom: 40px;
+}
+
+/*Form*/
+.register-login-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 90px;
+  height: 100%;
+}
+
+.form-header {
+  margin: 40px 0;
+  text-align: left;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  display: inline;
+}
+
+.form-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #b1b1b1;
+  padding: 8px 0;
+  font-size: 1.25rem;
+  outline: none;
+  display: block;
+}
+
+.form-input:hover, .form-input:focus {
+  border-color: black;
+}
+
+.password-forgot {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.password-forgot:hover {
+  text-decoration: underline;
+}
+
+
+.create-account, .login, .create-account-link, .btn-login {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: block;
+}
+
+
+.create-account, .create-account-link  {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.create-account:hover, .create-account-link:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+    text-align: center;
+}
+
+.login, .btn-login{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  width: 400px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.login:hover, .btn-login:hover {
+  background-color: black;
+  color: white;
+  border-color: transparent;
+}
+
+.terms-and-conditions {
+  font-weight: 500;
+  color: black;
+}
+
+.btn-login-container p, .btn-create-container p {
+  font-weight: 600;
+  text-align: center;
+  margin: -25px 0 30px;
+} 
+
+.footer {
+  width: 100%;
+  margin-top: 50px ;
+  padding: 25px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-container li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-container li i {
+  font-size: 20px;
+}
+
+.footer-container li i:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 500px) {
+  /*form*/
+  .form-container {
+    max-width: 250px;
+  }
+  .login, .btn-login {
+    width: 250px;
+  }
+  /*header*/
+  .item-link i {
+    margin: 0;
+  }
+  .item-link span{
+    display: none;
+  }
+  .header-left, .header-right {
+    gap: 10px;
+  }
+  .header {
+    padding: 0 20px;
+  }
+  /*footer*/
+  .footer-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+}
