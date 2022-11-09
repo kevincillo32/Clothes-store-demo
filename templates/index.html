@@ -12,28 +12,44 @@
   <title>Nike</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-left">
-          <button class="icon-menu link-nav">
-              <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="logo-nav">
-            <a href="index.html">
-              <img src="static/img/nike-logo.png" alt="Nike Logo" class="logo">
-            </a>
-          </div>
-        </div>
-        <div class="header-right">
-          <a href="login.html" class="item-link link-nav">
-            <i class="fa-solid fa-user"></i>
-            <span>Cuenta</span>
-          </a>
-          <a href="" class="item-link link-nav">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span>Carrito</span>
+  <!--Header-->
+  <header>
+    <div class="header">
+      <div class="header-left">
+        <button class="icon-menu link-nav">
+          <i class="fa-solid fa-bars" id="icon"></i>
+        </button>
+        <div class="logo-nav">
+          <a href="index.html">
+            <img src="static/img/nike-logo.png" alt="Nike Logo" class="logo">
           </a>
         </div>
-    </header>
+      </div>
+      <div class="header-right">
+        <a href="login.html" class="item-link link-nav">
+          <i class="fa-solid fa-user"></i>
+          <span>Cuenta</span>
+        </a>
+        <a href="" class="item-link link-nav">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Carrito</span>
+        </a>
+      </div>
+    </div>
+    <div class="header-menu-bg">
+      <div class="header-menu">
+        <ul>
+          <li><a href="camisas.html">Camisas</a></li>
+          <li><a href="sudaderas.html">Sudaderas</a></li>
+          <li><a href="gorras.html">Gorras</a></li>
+          <li><a href="zapatos.html">Zapatos</a></li>
+          <li><a href="Mochilas.html">Mochilas</a></li>
+          <li><a href="balones.html">Balones</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--Main-->
     <div class="container">
       <main>
         <h1 class="titulo">NUESTROS PRODUCTOS</h1>
@@ -41,31 +57,31 @@
           <div class="collection-list">
             <a href="camisas.html">
               <div class="list">
-                <img src="static/img/imagen.png" alt="">
+                <img src="static/img/camisa.png" alt="" class="product-img">
                 <p>CAMISAS</p>
               </div>
             </a>
           </div>
           <div class="collection-list">
-            <a href="#">
+            <a href="sudaderas.html">
               <div class="list">
-                <img src="static/img/sudadera.png" alt="">
+                <img src="static/img/sudadera.png" alt="" class="product-img">
                 <p>SUDADERAS</p>
               </div>
             </a>
           </div>
           <div class="collection-list">
-            <a href="#">
+            <a href="gorras.html">
               <div class="list">
-                <img src="static/img/gorras.png" alt="">
+                <img src="static/img/gorra.png" alt="" class="product-img">
                 <p>GORRAS</p>
               </div>
             </a>
           </div>
           <div class="collection-list">
-            <a href="#">
+            <a href="zapatos.html">
               <div class="list">
-                <img src="static/img/airjordan.png" alt="">
+                <img src="static/img/zapato.png" alt="" class="product-img">
                 <p>ZAPATOS</p>
               </div>
             </a>
@@ -73,7 +89,7 @@
           <div class="collection-list">
             <a href="#">
               <div class="list">
-                <img src="static/img/mochila.png" alt="">
+                <img src="static/img/mochila.png" alt="" class="product-img">
                 <p>MOCHILAS</p>
               </div>
             </a>
@@ -81,7 +97,7 @@
           <div class="collection-list">
             <a href="#">
               <div class="list">
-                <img src="static/img/balon.png" alt="">
+                <img src="static/img/balon.png" alt="" class="product-img">
                 <p>BALONES</p>
               </div>
             </a>
@@ -89,6 +105,7 @@
         </div>
       </main>
   </div>
+  <!--Footer-->
   <footer class="footer">
     <ul class="footer-container">
       <li>©2022 Nike</li>
@@ -99,5 +116,7 @@
       <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
     </ul>
   </footer>
+
 </body>
+ <script src="static/js/app.js"></script>
 </html>

@@ -12,34 +12,48 @@
   <title>Login - Nike</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-left">
-          <button class="icon-menu link-nav">
-              <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="logo-nav">
-            <a href="index.html">
-              <img src="static/img/nike-logo.png" alt="Nike Logo" class="logo">
-            </a>
-          </div>
-        </div>
-        <div class="header-right">
-          <a href="login.html" class="item-link link-nav">
-            <i class="fa-solid fa-user"></i>
-            <span>Cuenta</span>
-          </a>
-          <a href="#" class="item-link link-nav">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span>Carrito</span>
+  <header>
+    <div class="header">
+      <div class="header-left">
+        <button class="icon-menu link-nav">
+          <i class="fa-solid fa-bars" id="icon"></i>
+        </button>
+        <div class="logo-nav">
+          <a href="index.html">
+            <img src="static/img/nike-logo.png" alt="Nike Logo" class="logo">
           </a>
         </div>
-    </header>
+      </div>
+      <div class="header-right">
+        <a href="login.html" class="item-link link-nav">
+          <i class="fa-solid fa-user"></i>
+          <span>Cuenta</span>
+        </a>
+        <a href="" class="item-link link-nav">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Carrito</span>
+        </a>
+      </div>
+    </div>
+    <div class="header-menu-bg">
+      <div class="header-menu">
+        <ul>
+          <li><a href="camisas.html">Camisas</a></li>
+          <li><a href="sudaderas.html">Sudaderas</a></li>
+          <li><a href="gorras.html">Gorras</a></li>
+          <li><a href="zapatos.html">Zapatos</a></li>
+          <li><a href="Mochilas.html">Mochilas</a></li>
+          <li><a href="balones.html">Balones</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
       <div class="register-login-container">
         <div class="form-container">
           <header class="form-header">
             <h1>LOGIN</h1>
           </header>
-          <form action="">
+          <form action="" method="post">
             <div class="email">
               <label for="">Correo Electronico</label>
               <input type="email" name="email" id="email" required class="form-input">
@@ -73,4 +87,5 @@
         </ul>
           </footer>
 </body>
+<script src="static/js/app.js"></script>
 </html>
