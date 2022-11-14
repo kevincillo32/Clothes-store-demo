@@ -19,5 +19,17 @@ def zapatos(request):
     return render(request, 'zapatos.html')
 def mochilas(request):
     return render(request, 'mochilas.html')
+def camisagris(request):
+    return render(request, 'camisa-gris-nike.html')
+def camisablanca(request):
+    return render(request, 'camisa-blanca-nike.html')
+def camisablanca2(request):
+    return render(request, 'camisa-blanca-2-nike.html')
+def camisanegra(request):
+    return render(request, 'camisa-negra-nike.html')
+def camisaazul(request):
+    return render(request, 'camisa-azul-nike.html')
+def camisaroja(request):
+    return render(request, 'camisa-roja-nike.html')
 
 
